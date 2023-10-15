@@ -35,9 +35,9 @@ body {
 
 .profile-picture {
     display: block;
-    margin: 120px auto 0;
-    width: 300px;
-    height: 300px;
+    margin: 10% auto 0; /* Ajustado o valor das margens para responsividade */
+    width: 60%; /* Ajustado o tamanho */
+    max-width: 300px; /* Adicionado max-width para limitar o tamanho */
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0px -1px 35px rgb(59, 59, 59);
@@ -48,80 +48,57 @@ body {
 .profile-picture img {
     width: 100%;
     height: 100%;
-    object-fit: cover;1
+    object-fit: cover;
 }
 
 .profile-container {
     text-align: center;
-    margin-top: 80px;
-    max-width: 800px; /* Adicione uma largura máxima adequada para o conteúdo */
+    margin-top: 10%; /* Ajustado o valor das margens para responsividade */
+    max-width: 80%; /* Adicionado max-width para limitar o tamanho */
     margin-left: auto;
     margin-right: auto;
 }
 
 .profile-container h1 {
-    margin-top: 35px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 15px; /* Ajustado o valor das margens para responsividade */
     color: #ffffff;
     font-size: 27px;
     text-shadow: -1px 0px 10px rgb(0, 0, 0);
 }
 
 .pclass {
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 10px; /* Ajustado o valor das margens para responsividade */
     color: #838181;
     font-size: 16px;
     text-shadow: -1px 0px 10px rgb(0, 0, 0);
 }
 
 .pclass u {
-    border-bottom: 3px solid rgb(59, 59, 59); 
-    text-decoration: none; 
+    border-bottom: 3px solid rgb(59, 59, 59);
+    text-decoration: none;
 }
 
 .hr2 {
-    margin-top: 17px;
-    width: 100vw;
+    width: 100%;
     border: none;
-    height: 7px; 
+    height: 7px;
     background-color: rgba(59, 59, 59, 0.116);
 }
 
-.p-fieldh h2 {
-    margin-top: 80px;
-    margin-left: auto;
-    margin-right: auto;
-    color: #ffffff;
-    font-size: 28px;
-    box-shadow: -1px 0px 10px rgba(0, 0, 0, 0.295);
-}
-
-
-.p-fieldc h2 {
-    margin-top: 80px;
-    margin-left: auto;
-    margin-right: auto;
-    color: #ffffff;
-    font-size: 28px;
-    box-shadow: -1px 0px 10px rgba(0, 0, 0, 0.295);
-    
-}
-
+.p-fieldh h2,
+.p-fieldc h2,
 .p-fieldp h2 {
-    margin-top: 80px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 10%; /* Ajustado o valor das margens para responsividade */
     color: #ffffff;
     font-size: 28px;
     box-shadow: -1px 0px 10px rgba(0, 0, 0, 0.295);
-    
 }
 
-.p-fieldh {
+.p-fieldh,
+.p-fieldc,
+.p-fieldp {
     text-align: center;
-    margin-top: 80px;
+    margin-top: 10%; /* Ajustado o valor das margens para responsividade */
 }
 
 .p-imgs {
@@ -138,13 +115,14 @@ body {
 .p-imgsp {
     text-align: center;
     margin-top: 5px;
-    width: 560px;
-    height: 280px;
-    border-radius: 2%; 
+    width: 100%; /* Ajustado o tamanho */
+    max-width: 560px; /* Adicionado max-width para limitar o tamanho */
+    height: auto; /* Ajustado o tamanho */
+    border-radius: 2%;
 }
 
 .p-imgsp p img {
-    border-radius: 2%; 
+    border-radius: 2%;
     margin-top: 5px;
     box-shadow: 0px -1px 10px rgb(59, 59, 59);
 }
@@ -154,60 +132,20 @@ body {
     height: 50px;
     box-shadow: 0 -2px 20px rgb(61, 60, 60);
     border-radius: 50%;
-    padding: 10px; 
+    padding: 10px;
 }
 
-.phtml:hover {
-    cursor: pointer;
-    transform: scale(1.1,1.1);
-    transition: .2s ease-in-out;
-}
-
-.pcss:hover {
-    cursor: pointer;
-    transform: scale(1.1,1.1);
-    transition: .2s ease-in-out;
-}
-
-.pjs:hover {
-    cursor: pointer;
-    transform: scale(1.1,1.1);
-    transition: .2s ease-in-out;
-}
-
-.pts:hover {
-    cursor: pointer;
-    transform: scale(1.1,1.1);
-    transition: .2s ease-in-out;
-}
-
-.pjav:hover {
-    cursor: pointer;
-    transform: scale(1.1,1.1);
-    transition: .2s ease-in-out;
-}
-
-.pdc:hover {
-    cursor: pointer;
-    transform: scale(1.1,1.1);
-    transition: .2s ease-in-out;
-}
-
-.ptt:hover {
-    cursor: pointer;
-    transform: scale(1.1,1.1);
-    transition: .2s ease-in-out;
-}
-
-.pgit:hover {
-    cursor: pointer;
-    transform: scale(1.1,1.1);
-    transition: .2s ease-in-out;
-}
-
+.phtml:hover,
+.pcss:hover,
+.pjs:hover,
+.pts:hover,
+.pjav:hover,
+.pdc:hover,
+.ptt:hover,
+.pgit:hover,
 .ppro:hover {
     cursor: pointer;
-    transform: scale(1.05,1.05);
+    transform: scale(1.1,1.1);
     transition: .2s ease-in-out;
 }
 
@@ -223,75 +161,75 @@ body {
     align-items: center;
     box-shadow: 0 -2px 10px rgb(61, 60, 60);
 }
-  
-  .navbar ul {
+
+.navbar ul {
     list-style: none;
     padding: 0px;
-  }
-  
-  .navbar li {
+}
+
+.navbar li {
     display: inline;
-    margin: 0 200px;
-  }
-  
-  .navbar a {
+    margin: 0 10%; /* Ajustado o valor das margens para responsividade */
+}
+
+.navbar a {
     text-decoration: none;
     color: #fff;
     font-size: 18px;
     text-transform: uppercase;
     transition: color 0.3s;
-  }
-  
-  .navbar a:hover {
-    color: rgb(161, 160, 160); 
-  }
+}
+
+.navbar a:hover {
+    color: rgb(161, 160, 160);
+}
 
 ::-webkit-scrollbar {
     width: 8px;
-  }
-  
-  ::-webkit-scrollbar-thumb {
+}
+
+::-webkit-scrollbar-thumb {
     background: #666;
     border-radius: 8px;
-  }
-  
-  ::-webkit-scrollbar-track {
+}
+
+::-webkit-scrollbar-track {
     background: #f1f1f1;
     border-radius: 8px;
-  }
- 
-  ::-webkit-scrollbar-thumb {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background: #444;
-  }
+}
 
-  #pd {
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #444;
+}
+
+#pd {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 15px;
     color: #838181;
     font-size: 16px;
     text-shadow: -1px 0px 10px rgb(0, 0, 0);
-  }
-  
- @media (max-width: 768px) {
- /* Ajuste a margem inferior do body para evitar rolagem horizontal */
+}
+
+@media (max-width: 768px) {
     body {
         overflow-x: hidden;
+        margin-bottom: 0;
     }
 
     .profile-picture {
         width: 200px;
         height: 200px;
-        margin: 60px auto 0;
+        margin: 10% auto 0;
     }
 
     .profile-container h1 {
         font-size: 24px;
-        margin-top: 20px;
+        margin-top: 5%;
     }
 
     .pclass {
@@ -302,24 +240,8 @@ body {
     .p-fieldc h2,
     .p-fieldp h2 {
         font-size: 24px;
-        margin-top: 60px;
-    }
-
-    /* Ajuste as margens dos elementos conforme necessário */
-
-    .navbar ul {
-        list-style: none;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        margin-top: 5%;
     }
 
     .navbar li {
-        margin: 0 20px;
-    }
-
-    ::-webkit-scrollbar {
-        width: 5px;
-    }
-}
+       
