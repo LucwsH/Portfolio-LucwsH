@@ -275,7 +275,6 @@ body {
   }
   
  @media (max-width: 768px) {
- /* Ajuste a margem inferior do body para evitar rolagem horizontal */
     body {
         overflow-x: hidden;
         margin-bottom: 0;
