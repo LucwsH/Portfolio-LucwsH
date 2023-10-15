@@ -1,0 +1,7 @@
+DISPLAY_NAME=Portfólio 
+DESCRIPTION=...
+MAIN=index.html
+MEMORY=512
+SUBDOMAIN=lucwsh
+VERSION=recommended
+AUTORESTART=true
