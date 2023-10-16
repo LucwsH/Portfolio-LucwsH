@@ -1,3 +1,5 @@
+// Desabilitar ctrl shift c/i & botão direito
+
 document.addEventListener("contextmenu", function(e) {
   e.preventDefault();
 });
